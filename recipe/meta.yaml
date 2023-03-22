@@ -16,7 +16,7 @@ source:
     folder: external/spglib/spglib-1.16.5
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
 
 outputs:

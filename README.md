@@ -98,6 +98,30 @@ mamba repoquery whoneeds airss --channel conda-forge
 mamba repoquery depends airss --channel conda-forge
 ```
 
+Difference between `airss` and `airss-with-default-names`
+=========================================================
+
+The AIRSS package is consisted of many small binaries and scripts.
+Installing all of them in `bin` folder of the environment may not be ideal and is likely to cause conflicts with other packages. 
+
+Hence, in the default package `airss`, only the following tools are exposed:
+```
+airss.pl
+buildcell
+cabal
+crud.pl
+cryan
+gencell
+rescat
+respack
+resplit
+```
+
+Nevertheless, all of the executables can still be accessed with the `airss` executable acting as the main entry point.
+
+For example,  `airss castep_relax` runs the `castep_relax` script.
+
+On the other hand, the `airss-with-default-names` installs all tools in the environment.
 
 About conda-forge
 =================
