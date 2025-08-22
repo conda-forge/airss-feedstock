@@ -27,6 +27,7 @@ outputs:
         - libblas
     requirements:
       build:
+        - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - {{ compiler('fortran') }}
         - make
