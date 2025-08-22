@@ -2,7 +2,7 @@
 
 set -ex
 
-LIBS="-llapack -lblas -lsymspg"
+LIBS="-llapack -lblas"
 
 make \
   FC="$FC" \
