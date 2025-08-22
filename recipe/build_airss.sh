@@ -2,7 +2,7 @@
 
 set -ex
 
-LIBS="-llapack -lblas lib/libsymspg.a"
+LIBS="-llapack -lblas $PWD/lib/libsymspg.a"
 
 make \
   FC="$FC" \
