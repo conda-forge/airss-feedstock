@@ -16,7 +16,7 @@ source:
     folder: external/spglib/spglib-1.16.5
 
 build:
-  number: 1
+  number: 2
   skip: true  # [not linux]
 
 outputs:
@@ -32,7 +32,6 @@ outputs:
         - make
         - patch
       host:
-        - spglib 1.16.*
         - libblas  # needed for proper pinning
         - liblapack
       run:
